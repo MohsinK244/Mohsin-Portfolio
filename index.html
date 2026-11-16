@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohsin Khan — Portfolio</title>
+  <meta name="description" content="Mohsin Khan. BBA (DBE) at IIM Bangalore and BMS at Jai Hind College. McKinsey Forward 2026.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&family=Caveat:wght@500;700&family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Archivo:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- header + the dropdown. it's the same on every page -->
+<header class="topbar">
+  <a href="index.html" class="logo">MK<span>●</span>LIVE</a>
+  <nav class="menu">
+    <button type="button" class="menu-btn">pages <span class="caret">▾</span></button>
+    <ul class="drop">
+          <li><a href="index.html" class="here"><span class="drop-no">00</span> Home <em>the poster</em></a></li>
+          <li><a href="education.html"><span class="drop-no">01</span> Education <em>recorded at</em></a></li>
+          <li><a href="skills.html"><span class="drop-no">02</span> Skills <em>the rig</em></a></li>
+          <li><a href="experience.html"><span class="drop-no">03</span> Experience <em>the setlist</em></a></li>
+          <li><a href="certifications.html"><span class="drop-no">04</span> Certifications <em>liner notes</em></a></li>
+          <li><a href="next.html"><span class="drop-no">05</span> Next tour <em>what’s next</em></a></li>
+          <li><a href="contact.html"><span class="drop-no">06</span> Contact <em>backstage</em></a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ===================== THE POSTER ===================== -->
+  <section class="poster" id="top">
+    <p class="poster-presents">portfolio &nbsp;·&nbsp; 2026</p>
+
+    <h1 class="poster-name">
+      <span class="line l1">MOHSIN</span>
+      <span class="line l2">KHAN</span>
+    </h1>
+
+    <div class="polaroid">
+      <span class="tape tape-a"></span>
+      <span class="tape tape-b"></span>
+      <img src="images/mohsin.jpg" alt="Mohsin Khan in a black suit with a blue lanyard">
+      <p class="caption">Mohsin Khan · Mumbai</p>
+    </div>
+
+    <div class="poster-bill">
+      <p class="bill-line">business <em>at IIM Bangalore</em></p>
+      <p class="bill-line">events <em>&amp; operations</em></p>
+      <p class="bill-line">code <em>&amp; design</em></p>
+      <p class="bill-line">guitar <em>&amp; words, always</em></p>
+    </div>
+
+    <p class="poster-venue">
+      BBA (DBE) @ <strong>IIM Bangalore</strong><br>
+      BMS @ <strong>Jai Hind College, Mumbai</strong><br>
+      McKinsey Forward Program @ <strong>2026 cohort</strong>
+    </p>
+
+    <a href="#programme" class="scroll-cue">see the programme ↓</a>
+  </section>
+
+  <!-- the ticker. pure css marquee, no js -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>McKINSEY FORWARD ’26</span><span>★</span>
+      <span>ORGANISING COMMITTEE · TALAASH · E-CELL · JBC</span><span>★</span>
+      <span>ROTARACT · GBM → SECRETARY</span><span>★</span>
+      <span>NOTION · EXCEL · PR TEMPLATES</span><span>★</span>
+      <span>CERTIFIED APP &amp; GAME DEVELOPER</span><span>★</span>
+      <span>McKINSEY FORWARD ’26</span><span>★</span>
+      <span>ORGANISING COMMITTEE · TALAASH · E-CELL · JBC</span><span>★</span>
+      <span>ROTARACT · GBM → SECRETARY</span><span>★</span>
+      <span>NOTION · EXCEL · PR TEMPLATES</span><span>★</span>
+      <span>CERTIFIED APP &amp; GAME DEVELOPER</span><span>★</span>
+    </div>
+  </div>
+
+  <!-- ===================== THE PROGRAMME (links to every page) ===================== -->
+  <section class="programme" id="programme">
+    <div class="section-head">
+      <p class="kicker">the programme</p>
+      <h2>Tonight, in order</h2>
+    </div>
+    <ol class="prog-list">
+      <li><a href="education.html"><span class="p-no">01</span><span class="p-name">Education</span><span class="p-sub">recorded at · IIM Bangalore, Jai Hind College</span></a></li>
+      <li><a href="skills.html"><span class="p-no">02</span><span class="p-name">Skills</span><span class="p-sub">the rig · signal chain · things I’ve made</span></a></li>
+      <li><a href="experience.html"><span class="p-no">03</span><span class="p-name">Experience</span><span class="p-sub">the setlist · committees, Rotaract, building, learning</span></a></li>
+      <li><a href="experience.html#encore"><span class="p-no">★</span><span class="p-name">McKinsey Forward ’26</span><span class="p-sub">the encore · in progress</span></a></li>
+      <li><a href="certifications.html"><span class="p-no">04</span><span class="p-name">Certifications &amp; awards</span><span class="p-sub">liner notes · McKinsey Forward, Unstop, WhiteHat Jr</span></a></li>
+      <li><a href="next.html"><span class="p-no">05</span><span class="p-name">Next tour</span><span class="p-sub">what’s next · CFA, my own venture</span></a></li>
+      <li><a href="contact.html"><span class="p-no">06</span><span class="p-name">Contact</span><span class="p-sub">backstage · all access</span></a></li>
+    </ol>
+  </section>
+
+</main>
+
+<!-- previous / next, like flipping a programme -->
+<nav class="pager">
+  <span></span>
+  <a href="education.html" class="pg next"><small>next →</small>Education</a>
+</nav>
+
+<footer>
+  <p>designed and hand-coded by Mohsin Khan · Mumbai · 2026</p>
+</footer>
+
+</body>
+</html>

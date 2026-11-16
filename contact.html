@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Mohsin Khan</title>
+  <meta name="description" content="Contact Mohsin Khan.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&family=Caveat:wght@500;700&family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Archivo:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="inner">
+
+<!-- header + the dropdown. it's the same on every page -->
+<header class="topbar">
+  <a href="index.html" class="logo">MK<span>●</span>LIVE</a>
+  <nav class="menu">
+    <button type="button" class="menu-btn">pages <span class="caret">▾</span></button>
+    <ul class="drop">
+          <li><a href="index.html"><span class="drop-no">00</span> Home <em>the poster</em></a></li>
+          <li><a href="education.html"><span class="drop-no">01</span> Education <em>recorded at</em></a></li>
+          <li><a href="skills.html"><span class="drop-no">02</span> Skills <em>the rig</em></a></li>
+          <li><a href="experience.html"><span class="drop-no">03</span> Experience <em>the setlist</em></a></li>
+          <li><a href="certifications.html"><span class="drop-no">04</span> Certifications <em>liner notes</em></a></li>
+          <li><a href="next.html"><span class="drop-no">05</span> Next tour <em>what’s next</em></a></li>
+          <li><a href="contact.html" class="here"><span class="drop-no">06</span> Contact <em>backstage</em></a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<!-- ===================== BACKSTAGE (contact form) ===================== -->
+  <section class="backstage" id="backstage">
+    <div class="pass">
+      <span class="lanyard-hole"></span>
+      <p class="pass-top">BACKSTAGE · ALL ACCESS</p>
+      <h2>Contact</h2>
+      <p class="pass-sub">for events, collaborations or opportunities, drop me a line.</p>
+
+      <form action="mailto:mohsinkhan2442008@gmail.com" method="post" enctype="text/plain">
+        <label for="name">your name</label>
+        <input type="text" id="name" name="name" required minlength="2" maxlength="60">
+
+        <label for="email">your email</label>
+        <input type="email" id="email" name="email" required>
+
+        <fieldset>
+          <legend>this is about</legend>
+          <label class="radio"><input type="radio" name="about" value="event" checked> an event</label>
+          <label class="radio"><input type="radio" name="about" value="collab"> a collab</label>
+          <label class="radio"><input type="radio" name="about" value="opportunity"> an opportunity</label>
+        </fieldset>
+
+        <label for="msg">message</label>
+        <textarea id="msg" name="message" rows="4"></textarea>
+
+        <button type="submit">send it →</button>
+      </form>
+
+      <ul class="links">
+        <li><a href="mailto:mohsinkhan2442008@gmail.com">mohsinkhan2442008@gmail.com</a></li>
+        <li><a href="https://www.linkedin.com/in/mohsin-khan-0478ba228" target="_blank" rel="noopener">LinkedIn · Mohsin Khan</a></li>
+        <li><a href="https://www.instagram.com/mohsin_kh24" target="_blank" rel="noopener">Instagram · @mohsin_kh24</a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<!-- previous / next, like flipping a programme -->
+<nav class="pager">
+  <a href="next.html" class="pg prev"><small>← previous</small>Next tour</a>
+  <a href="index.html" class="pg next"><small>back to</small>Home</a>
+</nav>
+
+<footer>
+  <p>designed and hand-coded by Mohsin Khan · Mumbai · 2026</p>
+</footer>
+
+</body>
+</html>
